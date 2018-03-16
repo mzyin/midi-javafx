@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.Double?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="gridPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="369.0" prefWidth="868.0" style="-fx-background-color: #cccccc;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MidiController">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="654.0" minWidth="10.0" prefWidth="115.04442596435547" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="654.0" minWidth="10.0" prefWidth="68.95557403564453" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="654.0" minWidth="10.0" prefWidth="68.01777648925781" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="654.0" minWidth="10.0" prefWidth="68.00888061523438" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="654.0" minWidth="10.0" prefWidth="69.04443359375" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="654.0" minWidth="10.0" prefWidth="69.03555297851562" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="654.0" minWidth="10.0" prefWidth="67.982177734375" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="654.0" minWidth="10.0" prefWidth="68.04443359375" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="654.0" minWidth="10.0" prefWidth="66.05328369140625" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="654.0" minWidth="10.0" prefWidth="68.0533447265625" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="654.0" minWidth="10.0" prefWidth="66.04443359375" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="654.0" minWidth="10.0" prefWidth="74.95556640625" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints />
+      <RowConstraints maxHeight="224.0" minHeight="10.0" prefHeight="44.65769958496094" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="224.0" minHeight="10.0" prefHeight="58.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="224.0" minHeight="10.0" prefHeight="26.315406799316406" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="233.0" minHeight="10.0" prefHeight="119.32884216308594" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="143.0" minHeight="5.7815704345703125" prefHeight="24.671157836914062" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="143.0" minHeight="0.0" prefHeight="53.3966064453125" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="140.0" minHeight="10.0" prefHeight="43.6033935546875" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Button fx:id="keyS" mnemonicParsing="false" onAction="#SPressed" prefHeight="129.0" prefWidth="66.0" style="-fx-alignment: BOTTOM_LEFT; -fx-background-color: #ffffff;" text="S" GridPane.columnIndex="2" GridPane.rowIndex="4">
+         <effect>
+            <DropShadow color="#6f6f6f" height="8.86" radius="3.9299999999999997" width="8.86" />
+         </effect></Button>
+      <Button fx:id="keyD" mnemonicParsing="false" onAction="#DPressed" prefHeight="141.0" prefWidth="66.0" style="-fx-alignment: BOTTOM_LEFT; -fx-background-color: #ffffff;" text="D" GridPane.columnIndex="3" GridPane.rowIndex="4">
+         <effect>
+            <DropShadow color="#797979" height="8.86" radius="3.9275" width="8.85" />
+         </effect></Button>
+      <Button fx:id="keyF" mnemonicParsing="false" onAction="#FPressed" prefHeight="149.0" prefWidth="67.0" style="-fx-alignment: BOTTOM_LEFT; -fx-background-color: #ffffff;" text="F" GridPane.columnIndex="4" GridPane.rowIndex="4">
+         <effect>
+            <DropShadow color="#727272" height="8.86" radius="3.9299999999999997" width="8.86" />
+         </effect></Button>
+      <Button fx:id="keyG" mnemonicParsing="false" onAction="#GPressed" prefHeight="129.0" prefWidth="67.0" style="-fx-alignment: BOTTOM_LEFT; -fx-background-color: #ffffff;" text="G" GridPane.columnIndex="5" GridPane.rowIndex="4">
+         <effect>
+            <DropShadow color="#6f6f6f" height="8.86" radius="3.9299999999999997" width="8.86" />
+         </effect></Button>
+      <Button fx:id="keyH" mnemonicParsing="false" onAction="#HPressed" prefHeight="151.0" prefWidth="65.0" style="-fx-alignment: BOTTOM_LEFT; -fx-background-color: #ffffff;" text="H" GridPane.columnIndex="6" GridPane.rowIndex="4">
+         <effect>
+            <DropShadow color="#6f6f6f" height="8.86" radius="3.9299999999999997" width="8.86" />
+         </effect></Button>
+      <Button fx:id="keyJ" mnemonicParsing="false" onAction="#JPressed" prefHeight="148.0" prefWidth="66.0" style="-fx-alignment: BOTTOM_LEFT; -fx-background-color: #ffffff;" text="J" GridPane.columnIndex="7" GridPane.rowIndex="4">
+         <effect>
+            <DropShadow color="#727272" height="8.86" radius="3.9299999999999997" width="8.86" />
+         </effect></Button>
+      <Button fx:id="keyK" mnemonicParsing="false" onAction="#KPressed" prefHeight="129.0" prefWidth="64.0" style="-fx-alignment: BOTTOM_LEFT; -fx-background-color: #ffffff;" text="K" GridPane.columnIndex="8" GridPane.rowIndex="4">
+         <effect>
+            <DropShadow color="#6f6f6f" height="8.86" radius="3.9299999999999997" width="8.86" />
+         </effect></Button>
+      <Button fx:id="keyL" mnemonicParsing="false" onAction="#LPressed" onMouseDragEntered="#LPressed" prefHeight="154.0" prefWidth="66.0" style="-fx-alignment: BOTTOM_LEFT; -fx-background-color: #ffffff;" text="L" GridPane.columnIndex="9" GridPane.rowIndex="4">
+         <effect>
+            <DropShadow color="#797979" height="8.86" radius="3.9299999999999997" width="8.86" />
+         </effect></Button>
+      <Button fx:id="keyCol" mnemonicParsing="false" onAction="#ColonPressed" onMouseDragEntered="#ColonPressed" prefHeight="151.0" prefWidth="64.0" style="-fx-alignment: BOTTOM_LEFT; -fx-background-color: #ffffff;" text=";" GridPane.columnIndex="10" GridPane.rowIndex="4">
+         <effect>
+            <DropShadow color="#757575" height="8.86" radius="3.9299999999999997" width="8.86" />
+         </effect></Button>
+      <Button fx:id="keyA" mnemonicParsing="false" onAction="#APressed" onMouseDragOver="#APressed" prefHeight="160.0" prefWidth="66.0" style="-fx-alignment: BOTTOM_LEFT; -fx-background-color: #ffffff;" text=" A" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <effect>
+            <DropShadow color="#686868" height="8.86" radius="3.9299999999999997" width="8.86" />
+         </effect></Button>
+      <Button fx:id="keyQuo" mnemonicParsing="false" onAction="#AposPressed" onMouseDragEntered="#AposPressed" prefHeight="159.0" prefWidth="62.0" style="-fx-alignment: BOTTOM_LEFT; -fx-background-color: #ffffff;" text="'" GridPane.columnIndex="11" GridPane.rowIndex="4">
+         <effect>
+            <DropShadow color="#727272" height="8.86" radius="3.9299999999999997" width="8.86" />
+         </effect></Button>
+      <Button fx:id="KeyW" mnemonicParsing="false" onAction="#WPressed" onMouseDragEntered="#WPressed" prefHeight="65.0" prefWidth="55.0" style="-fx-background-color: #000000; -fx-alignment: BOTTOM_LEFT;" text="W" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="TOP">
+         <effect>
+            <DropShadow color="#575757" height="8.04" radius="3.5199999999999996" spread="0.04" width="8.04" />
+         </effect></Button>
+      <Button fx:id="KeyE" mnemonicParsing="false" onAction="#EPressed" onMouseDragEntered="#EPressed" prefHeight="65.0" prefWidth="55.0" style="-fx-background-color: #000000; -fx-alignment: BOTTOM_LEFT;" text="E" textFill="WHITE" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="TOP">
+         <effect>
+            <DropShadow color="#545454" height="8.86" radius="3.9299999999999997" width="8.86" />
+         </effect></Button>
+      <Button fx:id="KeyT" mnemonicParsing="false" onAction="#TPressed" onMouseDragEntered="#TPressed" prefHeight="65.0" prefWidth="55.0" style="-fx-background-color: #000000; -fx-alignment: BOTTOM_LEFT;" text="T" textFill="WHITE" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="TOP">
+         <effect>
+            <DropShadow color="#575757" height="8.86" radius="3.9299999999999997" width="8.86" />
+         </effect></Button>
+      <Button fx:id="KeyY" mnemonicParsing="false" onAction="#YPressed" onMouseDragEntered="#YPressed" prefHeight="65.0" prefWidth="55.0" style="-fx-background-color: #000000; -fx-alignment: BOTTOM_LEFT;" text="Y" textFill="WHITE" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="TOP">
+         <effect>
+            <DropShadow color="#4a4a4a" height="8.86" radius="3.9299999999999997" width="8.86" />
+         </effect></Button>
+      <Button fx:id="KeyU" mnemonicParsing="false" onAction="#UPressed" prefHeight="65.0" prefWidth="55.0" style="-fx-background-color: #000000; -fx-alignment: BOTTOM_LEFT;" text="U" textFill="WHITE" GridPane.columnIndex="6" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="TOP">
+         <effect>
+            <DropShadow color="#5b5b5b" height="8.86" radius="3.9299999999999997" width="8.86" />
+         </effect></Button>
+      <Button fx:id="KeyO" mnemonicParsing="false" onAction="#OPressed" onMouseDragEntered="#OPressed" prefHeight="65.0" prefWidth="55.0" style="-fx-background-color: #000000; -fx-alignment: BOTTOM_LEFT;" text="O" textFill="WHITE" GridPane.columnIndex="8" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="TOP">
+         <effect>
+            <DropShadow color="#515151" height="8.86" radius="3.9299999999999997" width="8.86" />
+         </effect></Button>
+      <Button fx:id="KeyP" mnemonicParsing="false" onAction="#PPressed" onMouseDragEntered="#PPressed" onMouseDragOver="#PPressed" prefHeight="65.0" prefWidth="55.0" style="-fx-background-color: #000000; -fx-alignment: BOTTOM_LEFT;" text="P" textFill="WHITE" GridPane.columnIndex="9" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="TOP">
+         <effect>
+            <DropShadow color="#545454" height="8.86" radius="3.9299999999999997" width="8.86" />
+         </effect></Button>
+      <Button fx:id="sustainButton" mnemonicParsing="false" onAction="#sustainPressed" prefHeight="55.0" prefWidth="95.0" style="-fx-alignment: TOP_RIGHT; -fx-background-color: #cd8cff;" text="sustain off" textFill="WHITE" wrapText="true" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="BOTTOM">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <GridPane.margin>
+            <Insets right="7.0" />
+         </GridPane.margin>
+         <effect>
+            <DropShadow color="#757575" height="8.86" radius="3.9299999999999997" spread="0.02" width="8.86" />
+         </effect>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#previousInstrumentClicked" prefHeight="53.0" prefWidth="56.0" style="-fx-background-color: f4b35c; -fx-alignment: CENTER_LEFT;" text="&lt;" textFill="WHITE" GridPane.columnIndex="8" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="TOP">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <DropShadow color="#727272" height="8.86" radius="3.9299999999999997" width="8.86" />
+         </effect></Button>
+      <Button mnemonicParsing="false" onAction="#nextInstrumentClicked" prefHeight="53.0" prefWidth="57.0" style="-fx-background-color: #f4b35c; -fx-alignment: CENTER_LEFT; -fx-border-radius: 2; -fx-border-width: 0.5;" text="&gt;" textFill="WHITE" GridPane.columnIndex="9" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="TOP">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <DropShadow color="#797979" height="8.86" radius="3.9299999999999997" spread="0.01" width="8.86" />
+         </effect></Button>
+      <Label prefHeight="19.0" prefWidth="81.0" text="Instrument" textFill="#5e5e5e" GridPane.columnIndex="7" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="instrumentLabel" nodeOrientation="RIGHT_TO_LEFT" prefHeight="20.0" prefWidth="237.0" text="Piano" textFill="#bf8b46" GridPane.columnIndex="5" GridPane.columnSpan="4" GridPane.halignment="LEFT" GridPane.rowIndex="6" GridPane.valignment="TOP">
+         <GridPane.margin>
+            <Insets right="4.0" />
+         </GridPane.margin>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_LEFT" prefHeight="4.0" prefWidth="55.0" text="caps lock " textFill="#d7d7d7" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="BOTTOM">
+         <font>
+            <Font size="11.0" />
+         </font>
+         <GridPane.margin>
+            <Insets bottom="4.0" right="37.0" />
+         </GridPane.margin>
+      </Label>
+      <Label prefHeight="5.0" prefWidth="9.0" text="," textFill="WHITE" wrapText="true" GridPane.columnIndex="8" GridPane.halignment="RIGHT" GridPane.rowIndex="6" GridPane.valignment="BOTTOM">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <padding>
+            <Insets bottom="2.0" />
+         </padding>
+      </Label>
+      <Label prefHeight="27.0" prefWidth="19.0" text="." textFill="WHITE" wrapText="true" GridPane.columnIndex="9" GridPane.halignment="RIGHT" GridPane.rowIndex="6" GridPane.valignment="BOTTOM">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <padding>
+            <Insets right="9.0" />
+         </padding>
+      </Label>
+      <Button mnemonicParsing="false" onAction="#octaveDownClicked" prefHeight="53.0" prefWidth="56.0" style="-fx-background-color: #61c0ff; -fx-alignment: BOTTOM_LEFT;" text="z" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="TOP">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="13.0" />
+         </GridPane.margin>
+         <effect>
+            <DropShadow color="#616161" height="5.83" radius="2.415" spread="0.06" width="5.83" />
+         </effect>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#octaveUpClicked" prefHeight="53.0" prefWidth="55.0" style="-fx-background-color: #61c0ff; -fx-alignment: BOTTOM_LEFT; -fx-border-radius: 2; -fx-border-width: 0.5;" text="x" textFill="WHITE" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="TOP">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <DropShadow color="#7c7c7c" height="5.83" radius="2.41" spread="0.05" width="5.81" />
+         </effect>
+      </Button>
+      <Label prefHeight="19.0" prefWidth="42.0" text="+" textFill="WHITE" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="TOP" />
+      <Label prefHeight="19.0" prefWidth="28.0" text="     -" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="6" GridPane.valignment="TOP" />
+      <Label prefHeight="19.0" prefWidth="70.0" text="Octave" textFill="#5e5e5e" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label prefHeight="19.0" prefWidth="10.0" text="+" textFill="WHITE" GridPane.columnIndex="10" GridPane.rowIndex="6" GridPane.valignment="TOP">
+         <padding>
+            <Insets left="11.0" />
+         </padding>
+      </Label>
+      <Label fx:id="octaveLabel" prefHeight="21.0" prefWidth="103.0" text="C4 (Middle C)" textAlignment="CENTER" textFill="#468bb5" wrapText="true" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="6" GridPane.valignment="TOP">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label prefHeight="19.0" prefWidth="27.0" text="-" textFill="WHITE" GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="TOP" />
+      <AnchorPane prefHeight="200.0" prefWidth="12.0" style="-fx-background-color: #1c2128;" GridPane.columnIndex="8" GridPane.columnSpan="2" GridPane.rowIndex="2">
+         <effect>
+            <InnerShadow color="#403f3f" />
+         </effect>
+         <children>
+            <Label fx:id="currentNoteLabel" alignment="CENTER" layoutX="17.0" layoutY="4.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="96.0" textFill="#d3e9f2">
+               <font>
+                  <Font name="Hiragino Sans W1" size="42.0" />
+               </font>
+               <effect>
+                  <Glow level="0.29" />
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ScrollPane focusTraversable="false" prefHeight="58.0" prefWidth="309.0" style="-fx-background-color: #000000;" styleClass="mylistview" stylesheets="@style.css" vbarPolicy="NEVER" vmax="0.0" GridPane.columnIndex="3" GridPane.columnSpan="5" GridPane.rowIndex="2">
+         <content>
+          <AnchorPane nodeOrientation="RIGHT_TO_LEFT" prefHeight="58.0" prefWidth="341.0" style="-fx-background-color: #1c2128;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <effect>
+                  <InnerShadow color="#4d4d4d" />
+               </effect>
+               <children>
+                  <Label fx:id="notesPlayedLabel" layoutX="10.0" layoutY="16.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.83" prefHeight="26.0" prefWidth="40.0" textFill="#c3cfd3">
+                     <font>
+                        <Font name="Hiragino Sans W1" size="14.0" />
+                     </font>
+                     <effect>
+                        <Glow level="0.23" />
+                     </effect>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </content>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ScrollPane>
+      <Label opacity="0.7" prefHeight="13.0" prefWidth="36.0" text="Note" textFill="#e1ecf5" GridPane.columnIndex="8" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <padding>
+            <Insets right="5.0" />
+         </padding>
+         <effect>
+            <Glow level="0.26" />
+         </effect>
+      </Label>
+      <Label opacity="0.7" prefHeight="13.0" prefWidth="45.0" text="Octave" textFill="#e1ecf5" GridPane.columnIndex="9" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <padding>
+            <Insets left="9.0" />
+         </padding>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <MenuButton mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" popupSide="RIGHT" prefHeight="56.0" prefWidth="33.0" style="-fx-background-color: #1c212b;" stylesheets="@style.css" textFill="#1c212b" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+        <items>
+          <MenuItem fx:id="clearMenuItem" mnemonicParsing="false" style="-fx-background-insets: -9,-3,0,0; -fx-font-size: 12;" text="  Clear" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+          <MenuItem fx:id="exportMenuItem" mnemonicParsing="false" style="-fx-background-insets: -8,-3,0,0; -fx-font-size: 12;" text="Export" />
+        </items>
+         <effect>
+            <DropShadow color="#515151" height="0.0" radius="0.0" width="0.0" />
+         </effect>
+      </MenuButton>
+      <Polygon fill="#e1e0e0" rotate="-90.0" scaleX="0.07" scaleY="0.07" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="2">
+        <points>
+          <Double fx:value="-50.0" />
+          <Double fx:value="40.0" />
+          <Double fx:value="50.0" />
+          <Double fx:value="40.0" />
+          <Double fx:value="0.0" />
+          <Double fx:value="-60.0" />
+        </points>
+         <effect>
+            <DropShadow color="#979797" height="112.07" radius="32.7675" />
+         </effect>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </Polygon>
+      <Label fx:id="exportStatusLabel" alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" opacity="0.83" prefHeight="31.0" prefWidth="274.0" textAlignment="CENTER" textFill="#cadee4" GridPane.columnIndex="3" GridPane.columnSpan="5" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <Glow level="0.23" />
+         </effect>
+      </Label>
+      <Label fx:id="displayLabel" opacity="0.72" prefHeight="13.0" prefWidth="91.0" text="Sequence Played" textFill="#e1ecf5" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="2" GridPane.valignment="TOP">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <GridPane.margin>
+            <Insets top="1.0" />
+         </GridPane.margin>
+         <effect>
+            <Glow level="0.24" />
+         </effect>
+      </Label>
+      <Label fx:id="displayLabel2" opacity="0.67" prefHeight="13.0" prefWidth="105.0" text="Press ENTER when done" textFill="#e1ecf5" visible="false" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <effect>
+            <Glow level="0.2" />
+         </effect>
+         <GridPane.margin>
+            <Insets bottom="1.0" />
+         </GridPane.margin>
+      </Label>
+      <TextField fx:id="fileTextField" alignment="CENTER" disable="true" prefHeight="21.0" prefWidth="154.0" style="-fx-background-color: #1c2128; -fx-text-fill: #ffffff;" visible="false" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="2">
+         <font>
+            <Font name="Hiragino Sans W1" size="12.0" />
+         </font>
+      </TextField>
+   </children>
+</GridPane>
